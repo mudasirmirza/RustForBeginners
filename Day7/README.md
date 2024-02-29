@@ -1,8 +1,12 @@
 # Day 7: Structs and Enums
 
-
 ## Structs in Rust
-Think of structs like containers that hold different pieces of information together.
+* Think of structs like containers that hold different pieces of information together.
+* Structs allow you to create custom data types by grouping related data fields together.
+* They are similar to structs in other languages like C and C++.
+
+### Declaring Structs
+* Structs are declared using the struct keyword followed by the name of the struct and its fields.
 
 ```rust
 // Define a struct representing a person
@@ -25,13 +29,18 @@ fn main() {
 ```
 #### In this example:
 
-We define a struct named Person with two pieces of information: name and age.
-We create a person named Alice with the specified name and age.
-We access and print Alice's name and age.
+* We define a struct named Person with two pieces of information: name and age.
+* We create a person named Alice with the specified name and age.
+* We access and print Alice's name and age.
 
 
 ## Enums in Rust
-Enums are like a list of options you can choose from.
+* Enums are like a list of options you can choose from.
+* Enums (enumerations) allow you to define a type by enumerating its possible variants.
+* Enums are useful for representing data that can be one of a fixed set of options.
+
+### Declaring Enums
+* Enums are declared using the enum keyword followed by the name of the enum and its variants.
 
 ```rust
 // Define an enum representing different states of a web request
@@ -58,26 +67,24 @@ fn main() {
 
 #### In this example:
 
-We define an enum named Status with different options representing the state of a web request.
-We set the status to Ok.
-We print a message based on the status using a match statement.
-
+* We define an enum named Status with different options representing the state of a web request.
+* We set the status to Ok.
+* We print a message based on the status using a match statement.
 
 ### Action
-Open your text editor and create a new Rust file named `easy_structs_enums.rs`.
-
-Copy and paste the simplified examples of structs and enums provided above into `easy_structs_enums.rs`.
-
-Save the file.
-
-Open your terminal, navigate to the directory containing `easy_structs_enums.rs`, and compile the program using rustc:
+* Open your text editor and create a new Rust file named `structs_enums.rs`.
+* Copy and paste the examples of structs and enums provided above into `structs_enums.rs`.
+* Save the file.
+* Open your terminal, navigate to the directory containing `structs_enums.rs`, and compile the program using `rustc`:
 
 ```bash
-rustc easy_structs_enums.rs
+rustc structs_enums.rs
 ```
-After successful compilation, run the executable:
+* After successful compilation, run the executable:
 
 ```bash
-./easy_structs_enums
+./structs_enums
 ```
-You should see the output printed to the console, displaying the details of the person and the status of the web request.
+* You should see the output printed to the console, displaying the details of the person and the status of the web request.
+
+Congratulations! You've learned about structs and enums in Rust. Day8, we'll explore match statements and error handling.
